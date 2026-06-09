@@ -1,0 +1,40 @@
+
+:root{
+  --blue-900:#061522;--blue-850:#082033;--blue-800:#0b2d47;--blue-accent:#7fb7dc;
+  --page-bg:#dce8f1;--panel-bg:#f8fafc;--text-dark:#111827;--text-muted:#475569;
+  --border:rgba(15,23,42,.10);--shadow:0 22px 48px rgba(15,23,42,.20);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:var(--text-dark);background:var(--page-bg)}
+a{color:inherit;text-decoration:none}
+.site{min-height:100vh;display:grid;grid-template-columns:minmax(310px,34vw) 1fr}
+.sidebar{min-height:100vh;padding:32px;color:#f8fafc;background:radial-gradient(circle at 20% 12%,rgba(91,141,178,.22),transparent 28%),linear-gradient(170deg,var(--blue-900),var(--blue-850) 55%,var(--blue-800))}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:70px}
+.henke-logo{width:70px;height:70px;object-fit:cover;border-radius:4px;box-shadow:0 12px 28px rgba(0,0,0,.35)}
+.brand-title{font-weight:800;font-size:1rem;line-height:1.1}
+.brand-subtitle{margin-top:3px;font-size:.85rem;color:rgba(248,250,252,.78)}
+.sidebar-label{margin-bottom:18px;color:var(--blue-accent);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800}
+.sidebar h1{margin:0 0 26px;max-width:480px;font-size:clamp(3.2rem,6vw,5.4rem);line-height:.96;letter-spacing:-.06em}
+.sidebar p{max-width:430px;margin:0;color:rgba(248,250,252,.86);font-size:1.06rem;line-height:1.65}
+.main{min-height:100vh;padding:34px;background:radial-gradient(circle at 75% 4%,rgba(255,255,255,.55),transparent 34%),linear-gradient(135deg,#eef5fa,var(--page-bg))}
+.topbar{display:flex;justify-content:flex-end;align-items:center;min-height:74px;margin-bottom:26px}
+.alstromer-logo{width:235px;max-width:42vw;height:auto;display:block}
+.panel{width:min(980px,92%);margin:0 auto;padding:clamp(28px,4vw,48px);background:rgba(248,250,252,.94);border:1px solid rgba(255,255,255,.7);border-radius:28px;box-shadow:var(--shadow)}
+.back-link{display:inline-block;margin-bottom:20px;color:#0f3f60;font-weight:800}
+.panel-label{margin-bottom:10px;color:#0f557d;font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;font-weight:900}
+.panel h2{margin:0 0 18px;font-size:clamp(2.2rem,4vw,3.5rem);line-height:1;letter-spacing:-.055em}
+.intro{max-width:780px;margin:0 0 30px;color:#334155;font-size:1rem;line-height:1.7}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{min-height:150px;padding:24px;border:1px solid var(--border);border-radius:18px;background:linear-gradient(145deg,#fff,#f1f7fb);transition:transform .16s ease,box-shadow .16s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(15,23,42,.13)}
+.number{width:42px;height:42px;display:grid;place-items:center;margin-bottom:14px;border-radius:13px;background:#d7eaf5;color:#073858;font-weight:900}
+.card h3{margin:0 0 8px;font-size:1.28rem}.card p{margin:0;color:var(--text-muted);line-height:1.55}
+.menu-list{display:grid;gap:14px;margin-top:26px}
+.menu-item{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 22px;border:1px solid var(--border);border-radius:16px;background:#fff;transition:transform .16s ease,box-shadow .16s ease}
+.menu-item:hover{transform:translateX(4px);box-shadow:0 14px 28px rgba(15,23,42,.11)}
+.menu-item strong{display:block;margin-bottom:5px}.menu-item span{color:#64748b;font-size:.94rem}
+.arrow{color:#0f557d;font-size:1.5rem;font-weight:700}
+.note{margin-top:28px;padding:18px 22px;border-left:5px solid #0f557d;border-radius:16px;background:#e8f4fb;color:#1f3347;line-height:1.6}
+footer{margin-top:30px;color:#7b8794;font-size:.86rem}
+@media(max-width:920px){.site{grid-template-columns:1fr}.sidebar{min-height:auto}.brand{margin-bottom:38px}.main{min-height:auto}.topbar{justify-content:flex-start}.panel{width:100%}.card-grid{grid-template-columns:1fr}}
