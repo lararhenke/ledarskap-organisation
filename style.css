@@ -15,7 +15,7 @@ a{color:inherit;text-decoration:none}
 .brand-title{font-weight:800;font-size:1rem;line-height:1.1}
 .brand-subtitle{margin-top:3px;font-size:.85rem;color:rgba(248,250,252,.78)}
 .sidebar-label{margin-bottom:18px;color:var(--blue-accent);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800}
-.sidebar h1{margin:0 0 26px;max-width:480px;font-size:clamp(2.3rem,4vw,4rem);line-height:1;letter-spacing:-.04em}
+.sidebar h1{margin:0 0 26px;max-width:480px;font-size:clamp(1.8rem,3vw,3rem);line-height:1;letter-spacing:-.04em}
 .sidebar p{max-width:430px;margin:0;color:rgba(248,250,252,.86);font-size:1.06rem;line-height:1.65}
 .main{min-height:100vh;padding:34px;background:radial-gradient(circle at 75% 4%,rgba(255,255,255,.55),transparent 34%),linear-gradient(135deg,#eef5fa,var(--page-bg))}
 .topbar{display:flex;justify-content:flex-end;align-items:center;min-height:74px;margin-bottom:26px}
